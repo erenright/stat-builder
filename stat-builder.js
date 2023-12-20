@@ -1,4 +1,4 @@
-var cards = [ 10, 8, 8, 7, 6, 6, 6, 5, 4, 4, 4, 2 ];
+var cards = [];
 
 function updateRemainingCards()
 {
@@ -16,6 +16,14 @@ function updateRemainingCards()
     }
 
     $("#remainingCards").html(str);
+}
+
+function resetCards()
+{
+	cards = [ 10, 8, 8, 7, 6, 6, 6, 5, 4, 4, 4, 2 ];
+
+    updateRemainingCards();
+	$("#cards tr:gt(0)").remove();
 }
 
 function drawCard()
@@ -50,5 +58,6 @@ function drawCard()
 
 $(document).ready(function ()
 {
+	resetCards();
     updateRemainingCards();
 });

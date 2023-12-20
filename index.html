@@ -7,9 +7,12 @@
         <p>Copyright 2023, Eric Enright</p>
 
         <h2>Playing Cards</h2>
+        <p>
+		<input type="button" id="drawCard" value="Draw Cards" onclick="drawCard();"/>
+		<input type="button" id="resetCards" value="Reset" onclick="resetCards();"/>
+	</p>
         <table id="cards" style="border: 1px solid black; border-collapse: collapse;">
             <tr><td>Remaining Cards:</td><td id="remainingCards"></td></tr>
         </table>
-        <p><input type="button" id="drawCard" value="Draw Cards" onclick="drawCard();"/></p>
     </body>
 </html>
