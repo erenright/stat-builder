@@ -8,11 +8,22 @@
 
         <h2>Playing Cards</h2>
         <p>
-		<input type="button" id="drawCard" value="Draw Cards" onclick="drawCard();"/>
-		<input type="button" id="resetCards" value="Reset" onclick="resetCards();"/>
+        <input type="button" id="drawCard" value="Draw Cards" onclick="drawCard();"/>
+        <input type="button" id="resetCards" value="Reset" onclick="resetCards();"/>
 	</p>
         <table id="cards" style="border: 1px solid black; border-collapse: collapse;">
             <tr><td>Remaining Cards:</td><td id="remainingCards"></td></tr>
+        </table>
+
+        <h2>Point Buy</h2>
+        <table id="cards" style="border: 1px solid black; border-collapse: collapse;">
+            <tr><td>Points Remaining</td><td id="pb"></td><td></td></tr>
+            <tr><td>STR</td><td id="pb0"></td><td><input type="button" value="Buy" onclick="pointBuy(0);" /><input type="button" value="Sell" onclick="pointSell(0);" /></td></tr>
+            <tr><td>DEX</td><td id="pb1"></td><td><input type="button" value="Buy" onclick="pointBuy(1);" /><input type="button" value="Sell" onclick="pointSell(1);" /></td></tr>
+            <tr><td>CON</td><td id="pb2"></td><td><input type="button" value="Buy" onclick="pointBuy(2);" /><input type="button" value="Sell" onclick="pointSell(2);" /></td></tr>
+            <tr><td>INT</td><td id="pb3"></td><td><input type="button" value="Buy" onclick="pointBuy(3);" /><input type="button" value="Sell" onclick="pointSell(3);" /></td></tr>
+            <tr><td>WIS</td><td id="pb4"></td><td><input type="button" value="Buy" onclick="pointBuy(4);" /><input type="button" value="Sell" onclick="pointSell(4);" /></td></tr>
+            <tr><td>CHA</td><td id="pb5"></td><td><input type="button" value="Buy" onclick="pointBuy(5);" /><input type="button" value="Sell" onclick="pointSell(5);" /></td></tr>
         </table>
     </body>
 </html>
