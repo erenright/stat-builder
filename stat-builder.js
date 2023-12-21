@@ -20,7 +20,7 @@ function updateRemainingCards()
 
 function resetCards()
 {
-    cards = [ 10, 8, 8, 7, 6, 6, 6, 5, 4, 4, 4, 2 ];
+    cards = [ 10, 8, 8, 8, 8, 7, 6, 5, 4, 4, 4, 2 ];
 
     updateRemainingCards();
     $("#cards tr:gt(0)").remove();
